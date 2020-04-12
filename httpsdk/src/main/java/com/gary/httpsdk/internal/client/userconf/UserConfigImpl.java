@@ -4,9 +4,9 @@ package com.gary.httpsdk.internal.client.userconf;
  * Created by GaryCao on 2020/04/12.
  */
 public class UserConfigImpl {
-    private String hostUrl;
-    private String resUrl;
-    private String protocol; //http or https
+    public String hostUrl;
+    public String resUrl;
+    public String protocol; //http or https
 
     // Builder Pattern
     public static class Builder {
@@ -14,7 +14,7 @@ public class UserConfigImpl {
         private String resUrl;
 
         // Optional parameters - initialized to default values
-        private String protocol = "https";
+        private String protocol = "https://"; //or http://
 
         public Builder() {
         }

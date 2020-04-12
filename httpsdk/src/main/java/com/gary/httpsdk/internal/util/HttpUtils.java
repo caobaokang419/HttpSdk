@@ -24,10 +24,10 @@ public class HttpUtils {
     }
 
     public static void enableLog(boolean debug) {
-        HttpLog.enableLog(debug);
+        Log.enableLog(debug);
     }
 
     public static void setLogTag(String tag) {
-        HttpLog.setLogTag(tag);
+        Log.setLogTag(tag);
     }
 }
