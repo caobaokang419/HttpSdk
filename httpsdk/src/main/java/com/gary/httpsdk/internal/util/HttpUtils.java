@@ -6,6 +6,9 @@ import com.gary.httpsdk.HttpSdk;
 import com.gary.httpsdk.internal.HttpFactory;
 import com.gary.httpsdk.internal.client.HttpClient;
 
+/**
+ * Created by GaryCao on 2020/04/12.
+ */
 public class HttpUtils {
     private static volatile HttpClient httpClient;
 

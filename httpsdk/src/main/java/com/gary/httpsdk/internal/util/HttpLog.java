@@ -2,6 +2,9 @@ package com.gary.httpsdk.internal.util;
 
 import android.util.Log;
 
+/**
+ * Created by GaryCao on 2020/04/12.
+ */
 public final class HttpLog {
     public static final boolean DEBUG = false;
     private static String TAG_DEF = "[HttpSdk]";

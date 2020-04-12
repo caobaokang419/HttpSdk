@@ -3,10 +3,13 @@ package com.gary.httpsdk.internal.client;
 import android.content.Context;
 
 import com.gary.httpsdk.internal.client.request.RequestImpl;
-import com.gary.httpsdk.internal.client.request.Request;
+import com.gary.httpsdk.internal.client.request.IRequest;
 
 import java.util.Map;
 
+/**
+ * Created by GaryCao on 2020/04/12.
+ */
 public class HttpClientImpl implements HttpClient {
     private static volatile HttpClient client;
     private Context context;
@@ -27,7 +30,7 @@ public class HttpClientImpl implements HttpClient {
     }
 
     @Override
-    public Request getHttpRequest(Map<String, String> config) {
+    public IRequest getHttpRequest(Map<String, String> config) {
         return new RequestImpl(this.context, config);
     }
 }
