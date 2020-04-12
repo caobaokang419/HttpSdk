@@ -23,11 +23,11 @@ public class HttpUtils {
         return httpClient;
     }
 
-    public static void enableLog(boolean flag) {
-
+    public static void enableLog(boolean debug) {
+        HttpLog.enableLog(debug);
     }
 
     public static void setLogTag(String tag) {
-
+        HttpLog.setLogTag(tag);
     }
 }

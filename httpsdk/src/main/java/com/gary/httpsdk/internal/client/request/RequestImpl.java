@@ -16,14 +16,14 @@ import java.util.Map;
 public class RequestImpl implements IRequest {
     //private Map<String, String> baseConfig = new HashMap<>();
     private Context context;
-    private UserConfigImpl clientConf;
+    private UserConfigImpl userConfig;
 
     public RequestImpl(Context context, Map<String, String> config) {
         this.context = context;
-        this.clientConf = parseClientConfig(config);
+        this.userConfig = parseUserConfig(config);
     }
 
-    private UserConfigImpl parseClientConfig(Map<String, String> config) {
+    private UserConfigImpl parseUserConfig(Map<String, String> config) {
         UserConfigImpl.Builder builder = new UserConfigImpl.Builder();
         if (config.containsKey(UserConstant.REQ_BASE_URL)) {
             builder.setHostUrl((String) config.get(UserConstant.REQ_BASE_URL));
