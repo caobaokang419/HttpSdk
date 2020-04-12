@@ -3,6 +3,7 @@ package com.gary.httpsdk.internal.client.request;
 
 import android.content.Context;
 
+import com.gary.httpsdk.internal.client.result.ResultCallback;
 import com.gary.httpsdk.internal.client.userconf.UserConstant;
 import com.gary.httpsdk.internal.client.userconf.UserConfigImpl;
 import com.gary.httpsdk.internal.util.RequestUtils;
@@ -64,5 +65,15 @@ public class RequestImpl implements IRequest {
 
         }
         return null;
+    }
+
+    @Override
+    public void asyncGetRequest(Map<String, String> para, ResultCallback callback) {
+        //TODO
+    }
+
+    @Override
+    public void asyncPostRequest(Map<String, String> para, ResultCallback callback) {
+        //TODO
     }
 }
